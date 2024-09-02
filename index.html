@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my awesome portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo_1-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fafa fa-xmark" onclick="Closemenu()"></i>
+                </ul>
+                <i class="fa-solid fafa fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-taxt">
+               <div>
+                <p>Web Developer </p>
+                <h1>Hi, I'm <span>Mohan</span><br>Saini Form Rajsthan</h1>
+               </div>
+                <img src="/images/background.png.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- -------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/background.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius dolorum dignissimos molestiae illo
+                        enim nesciunt aliquam neque perspiciatis. Aliquam reiciendis sed ab, nobis nesciunt,
+                        exercitationem in nam veniam ullam accusantium ipsa quidem perferendis, voluptatibus iure facere
+                        inventore cum excepturi facilis harum pariatur sunt? Atque maxime explicabo eaque nam laudantium
+                        nostrum?</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET
+                                Institute</li>
+                            <li><span>2022 - 2023</span><br>Team land at StarApp LLC.</li>
+                            <li><span>2022 - 2023</span><br>UI/UX Design Executive at Coin
+                                Digital Ltd.</li>
+                            <li><span>2023 - 2024</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2022</span><br>MBA Form MIT Bangalore.</li>
+                            <li><span>2023</span><br>BBA Form ISM Bangalore.</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------Services-------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code" style="font-size: 50px; margin-bottom: 30px;"></i>
+                    <h2>Web development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam optio alias animi nam
+                        ipsum. Iste, atque?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple" style="font-size: 50px; margin-bottom: 30px;"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam optio alias animi nam
+                        ipsum. Iste, atque?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios" style="font-size: 50px; margin-bottom: 30px;"></i>
+                    <h2>graphic design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veniam optio alias animi nam
+                        ipsum. Iste, atque?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work 1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Visual Studio Code Software</h3>
+                        <p>Visual Studio Code, source-code editor developed by Microsoft for Windows, macOS and
+                            web browsers.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work 2.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Visual Studio Code Software</h3>
+                        <p>the process of planning, conceptualizing, and implementing editor for designing a website.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work 4.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Photoshop Software</h3>
+                        <p>Graphic design is a craft where professionals create visual content to communicate
+                            and techniques.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------contant-------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane" style=" color: #ff004f; margin-right: 15px; font-size: 25px;"></i> mohansaini995062@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone" style=" color: #ff004f; margin-right: 15px; font-size: 25px;"></i> +91-6376892486</p>
+                    <div class="social-icons">
+                        <a href="hattps://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images/MONUSAINI.RESUME.pdf" download  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                         <textarea name="Massage" rows="6" placeholder="Youe Massage"></textarea>
+                         <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright Kevin. Made Wtih <i class="fa-solid fa-heart" style="color: #ff004f;"></i> by Easy Tutorials</p>
+        </div>
+     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function Closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
